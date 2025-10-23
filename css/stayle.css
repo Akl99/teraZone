@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --mainColor: #f5cd04;
+    --secondaryColor: #e63737;
+    --color: #293642;
+
+}
+
+
+
+
+body {
+    font-family: cairo !important;
+   
+    background-color: #212529 !important;
+    color: white;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(16, 16, 16) !important;
+
+}
+
+/* start header */
+.top-header {
+    background-color: var(--mainColor);
+
+
+}
+
+
+
+
+.left-header a {
+    margin-left: 20px;
+    border-left: 1px solid rgb(58, 97, 117);
+
+    padding-left: 15px;
+
+    transition: all 0.3s;
+
+
+
+}
+
+.left-header :hover {
+    color: var(--secondaryColor) !important;
+}
+
+
+.menu-icon {
+    border-radius: 3px;
+    box-shadow: none !important;
+    margin-left: 3px;
+
+
+}
+
+
+
+
+
+.nav-link {
+    font-weight: 700 !important;
+}
+
+.buttom-header {
+    box-shadow: 3px 3px 3px 3px #ccc !important;
+
+
+}
+
+/* end header */
+
+/* start categories */
+
+.categories {
+    margin-top: 50px;
+
+
+}
+
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+
+
+}
+
+
+.cat {
+    margin-bottom: 20px;
+}
+
+/* .cat img {
+    transition: all 0.3s;
+
+       border: none;
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        height: 260px !important;
+        object-fit: contain;
+        object-position: center;
+
+} */
+
+.cat:hover img {
+    scale: 1.1;
+}
+
+.shdow h3 {
+    color: white;
+}
+
+/* start Products */
+.products {
+    margin-top: 70px;
+
+}
+
+
+
+
+
+.Product-info h3 {
+    font-family: Almarai;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Product-info p {
+    font-size: 10px;
+}
+
+.stars i {
+    color: rgb(242, 255, 0);
+    font-size: 20px;
+
+
+}
+
+
+
+
+
+.price :last-child {
+    text-decoration: line-through;
+}
+
+.quick-icons {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.334);
+    right: -50px;
+    top: 15px;
+    height: 150px;
+    width: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+
+
+}
+
+.quick-icons i {
+    font-size: 18px;
+}
+
+.product:hover .quick-icons {
+    right: 0px;
+}
+
+
+
+/* end Product */
+
+/* start new-products */
+.new-products {
+    margin-top: px;
+    padding-top: 30px;
+
+}
+
+/*end new-products */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+}
+
+.Product-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color);
+    padding: 10px;
+    min-height: 300px;
+    /* الحد الأدنى لطول المحتوى داخل البطاقة */
+}
+
+.Product-info p {
+    max-height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card img {
+    height: 230px;
+    object-fit: cover;
+    /* width: 100%; */
+}
+
+.card .btn {
+    margin-top: auto;
+}
+
+.btns-quantity button {
+    bottom: 1px solid#eee;
+}
+
+.btns-quantity button:hover {
+    bottom: 1px solid #ccc;
+}
+
+.btns-quantity button:active {
+    bottom: 1px solid #ccc !important;
+}
+
+.bac-color {
+    background-color: var(--color);
+    color: white;
+}
+
+.mini-card img {
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+.mini-card {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #dc3545;
+}
+
+.btns-quantity-mini button {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.btns-quantity-mini button:hover {
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+
+.row-min-card {
+    padding-bottom: 20px;
+    border-bottom: 2px dashed red;
+}
+
+.min-login {
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.back-clor li a {
+
+    color: white !important;
+
+}
+
+
+.week-products {
+    padding-top: 50px;
+}
+
+.mini-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.products-sm {
+    border: 1px solid #ccc;
+    background-color: var(--color);
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden !important;
+}
+
+.products-sm img {
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.products-sm:hover img {
+    rotate: 10deg;
+}
+
+.products-sm .products-info :first-child {
+
+    font-weight: bold;
+}
+
+.products-sm .products-info :last-child {
+    color: red;
+    font-weight: bold;
+}
+
+/* start ads */
+.ads {
+    background-color: var(--color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inr-ad .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2936426e;
+    z-index: 100 !important;
+
+}
+
+
+
+.inr-ad {
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+
+.inr-ad:hover img {
+    scale: 1.1;
+}
+
+.inr-ad img {
+    transition: all 0.3s;
+}
+
+.inr-ad .ad-info {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: center;
+    z-index: 101;
+
+}
+
+.inr-ad .ad-info h3 {
+    color: white;
+    font-size: 30px;
+    font-family: Almarai;
+}
+
+.inr-ad .ad-info p {
+    color: white;
+
+}
+
+/* end ads */
+
+/* start footer  */
+footer {
+    background-color: var(--color);
+    padding-top: 30px;
+    margin-top: 100px;
+    background-image: url('../images/كلاوت سوفت/footerbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid var(--secondaryColor);
+
+}
+
+footer h3 {
+    font-family: Almarai;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+footer a {
+    color: rgb(196, 194, 194) !important;
+    margin-bottom: 3px;
+}
+
+footer .row:first-child {
+    border-bottom: 2px dashed rgb(196, 194, 194);
+    padding-bottom: 30px;
+}
+
+/* end footer  */
+
+
+/* start .Product-.html */
+.inner-img .w-img {
+
+    height: 400px !important;
+
+}
+
+
+.carousel-img {
+    position: absolute !important;
+    bottom: 20px !important;
+    right: -170px !important;
+    /* border: 1px solid #ccc !important;  */
+    display: flex !important;
+    flex-direction: column;
+}
+
+.img-slider {
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 15px;
+
+}
+
+.img-sll  {
+       height: 90% !important;
+    /* object-fit: cover !important; */
+     width: 90% !important;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Almarai;
+}
+
+.reviews-section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* end.Product-.html */
+
+
+
+/* start bunner */
+.bunner {
+    padding-top: 75px;
+  margin-bottom: 30px;
+    background-color: var(--color);
+}
+
+.categories-title {
+    font-family: Almarai;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+   
+    border-bottom: 1px solid var(--secondaryColor);
+    padding-bottom: 20px;
+}
+
+.filter-section {
+    padding: 15px;
+    border: 1px solid rgb(255, 255, 255) !important;
+    border-radius: 8px;
+    background-color: var(--color);
+
+}
+
+.filter-title {
+    font-family: Almarai;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+/* end bunner */
+
+
+
+/* start cart */
+.cart-title {
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+.summery {
+    margin-top: 60px;
+    background-color: var(--color);
+    padding: 15px;
+    border-radius: 10px;
+}
+.bc-color{
+    background-color: var(--color);
+}
+/* end cart */
+
+/* start checkout */
+.user-info {
+    background-color: var(--color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.total-bres {
+   
+    font-size: 22px;
+
+}
+
+.master-card {
+    background-color: var(--color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.master-card img {
+    top: 58%;
+    left: 10px;
+}
+/* end checkout */
+
